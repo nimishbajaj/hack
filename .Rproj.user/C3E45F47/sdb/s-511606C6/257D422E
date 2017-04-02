@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "indeed = read.table(file = \"train.tsv\", sep = '\\t', header = TRUE, stringsAsFactors = FALSE, quote = \"\\\"\")\nindeedPart = indeed\nindeedPart$Part = ifelse( grepl(\"part\",indeedPart$tags), 1, 0)\nindeedPart$Full = ifelse( grepl(\"full\",indeedPart$tags), 1, 0)\nindeedPart$tags = NULL\nwrite.csv(indeedPart,\"indeedPart.csv\")\n",
+    "created" : 1491162260625.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3918342148",
+    "id" : "257D422E",
+    "lastKnownWriteTime" : 1491167654,
+    "last_content_update" : 1491167654462,
+    "path" : "D:/Indeed/Indeed.R",
+    "project_path" : "Indeed.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
